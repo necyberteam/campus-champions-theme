@@ -56,10 +56,10 @@
             {{ page.intro_message }}
           </div>
           <!-- <div class="col-md-6">-->
+            {{ drupal_block('search_form_block') }}
             {% if page.secondary_menu and logged_in %}
               {{ page.secondary_menu }}
             {% else %}
-              {{ drupal_block('search_form_block') }}
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
                     <a href="/user/login?current={{ path("<current>") }}" class="nav-link" data-drupal-link-system-path="user/login">Log in</a>
@@ -83,7 +83,7 @@
     <nav class="navbar fixed-to navbar-expand-lg navbar-light p-0" id="mainNav" aria-label="Main Navigation">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="{{ file_url('themes/champions-theme/img/logos/campus-champions-full-logo.svg') }}" class="logo" alt="{{ site_name }}">
+          <img src="{{ file_url('themes/champions-theme/img/logos/campus-champions-full-logo-white.svg') }}" class="logo" alt="{{ site_name }}">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="fa fa-bars" aria-hidden="true"></span>

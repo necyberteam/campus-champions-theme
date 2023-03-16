@@ -63,13 +63,20 @@
 
 </div>
 <script>
-$(document).ready(function() {
-  $('.flag-affinity-group a.btn-sm').addClass('btn-block').removeClass('px-2').removeClass('py-1').removeClass('btn-sm');
-});
-$('.flag-affinity-group a').click(function() {
-  setTimeout(
-   function() {
-    window.location.reload(true);
-   }, 100);
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.flag-affinity-group a.btn-sm').forEach(function(el) {
+    el.classList.add('btn-block');
+    el.classList.remove('px-2');
+    el.classList.remove('py-1');
+    el.classList.remove('btn-sm');
+  });
+
+  document.querySelectorAll('.flag-affinity-group a').forEach(function(el) {
+    el.addEventListener('click', function() {
+      setTimeout(function() {
+        window.location.reload(true);
+      }, 100);
+    });
+  });
 });
 </script>

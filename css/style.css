@@ -35,7 +35,7 @@
   --navbar-link-hover: var(--text);
   --navbar-toggler: var(--navbar-link);
   --navbar-dropdown: var(--text);
-  --navbar-dropdown-hover: var(--navbar-link);
+  --navbar-dropdown-hover: var(--link-hover);
 
   --font-header: 'Poppins', Lato, "Lucida Grande", Tahoma, Sans-Serif;
   --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
@@ -225,9 +225,10 @@ h5, h6 { font-size: 1rem; }
 a {
   color: var(--link);
   transition: all 0.25s;
+  text-decoration: none;
 }
 a:focus, a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--link-hover);
 }
 blockquote {
@@ -279,13 +280,11 @@ img::-moz-selection {
   font-size: 14px;
   font-weight: 800;
   padding: 15px 25px;
-  /*letter-spacing: 1px;
-  text-transform: uppercase;*/
   border-radius: 0;
   font-family: var(--font-body);
   margin-bottom: 10px;
-
   padding: 0.5em 1em;
+  border-radius: 50rem;
 }
 @media screen and (max-width: 575.98px) {
   .btn-sm-block {
@@ -750,7 +749,7 @@ header .brand a {
   display: block;
   overflow: hidden;
   border: none;
-  background: url("../../../themes/champions-theme/img/logos/campus-champions-full-logo.svg") 0 0 no-repeat;
+  background: url("../../../themes/campus-champions-theme/img/logos/campus-champions-full-logo.svg") 0 0 no-repeat;
   background-size: 100% auto;
   width: 250px;
   height: 70px;
@@ -786,13 +785,21 @@ header .tagline {
   background: var(--masthead-background);
   padding: 0;
   font-size: 0.85rem;
+  margin: 0 -15px;
 }
-.hero>div {
-  background: url("../../../themes/champions-theme/img/usmap.svg") center center no-repeat;
+.hero .container {
+  background: url("../../../themes/campus-champions-theme/img/usmap.svg") center center no-repeat;
   background-size: 90% auto;
   padding: 1em 0 2em 0;
 }
-.hero h2 {
+.hero .row {
+  padding: 0;
+}
+.hero .subtitle,
+.hero .cc-separator {
+  display: none;
+}
+.hero .cc-title {
   margin: 1em;
   padding: 0.5em;
   border-radius: 0.25em;
@@ -800,15 +807,15 @@ header .tagline {
   color: var(--masthead-header);
   font-size: 1.3em;
 }
+.hero .cc-title span {
+  color: var(--masthead-header-highlight);
+}
 .hero h3,
-.hero .hero-category {
+.hero .cc-category {
   color: var(--masthead-header);
   font-size: 1em;
 }
-.hero h2 span {
-  color: var(--masthead-header-highlight);
-}
-.hero .hero-card {
+.hero .cc-card {
   background: rgba(255, 255, 255, 0.90);
   border-radius: 0.25em;
   padding: 1em 5%;
@@ -816,7 +823,7 @@ header .tagline {
   width: 40%;
   margin: 0 5% 1em 5%;
 }
-.hero .hero-num {
+.hero .cc-num {
   font-size: 2em;
   color: var(--masthead-header-highlight);
 }
@@ -826,10 +833,10 @@ header .tagline {
   .hero {
     font-size: 1rem;
   }
-  .hero>div {
+  .hero .container {
     padding: 5.5em 0;
   }
-  .hero h2 {
+  .hero .cc-title {
     margin: 1.5em 3em;
     font-size: 2em;
   }
@@ -837,14 +844,14 @@ header .tagline {
   .hero .site-heading {
     padding: 50px 0;
   }
-  .hero .hero-card {
+  .hero .cc-card {
     width: 15%;
     margin: 0 1em 1em 1em;
     padding: 1em;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .hero>div {
+  .hero .container {
     padding: 8em 0;
   }
 }
@@ -879,7 +886,7 @@ header .tagline {
   background-color: transparent !important;
 }
 .wrapper {
-  background: url("../../../themes/champions-theme/img/logos/campus-champions-logo.svg") 800px 1000px no-repeat;
+  background: url("../../../themes/campus-champions-theme/img/logos/campus-champions-logo.svg") 800px 1000px no-repeat;
   background-size: 900px auto;
 }
 @media screen and (max-width: 575.98px) {
@@ -1002,7 +1009,12 @@ p.card-text { margin-top: 0; }
 .sidebar-ul .fa-bug {
   font-size: 1.05em !important;
 }
-
+main {
+  background: rgba(255, 255, 255, 0.90);
+}
+main.main-container {
+  background: transparent;
+}
 /* footer */
 
 footer .list-inline {
@@ -1331,18 +1343,18 @@ a[class^="map-"]:hover { fill: var(--default-hover); }
 
 .above-stretched-link { z-index: 1; position: relative; }
 
-/* Additional styling */
+/* Additional styling
 .cc-heading {
   color: #4C7C6C;
-}
+} */
 .cc-section {
-  background: rgba(255, 255, 255, 0.90) url("../../../themes/champions-theme/img/dotted-seperator.svg") 0 0 no-repeat;
+  background: rgba(255, 255, 255, 0.90) url("../../../themes/campus-champions-theme/img/dotted-seperator.svg") 0 0 no-repeat;
   background-size: 30% auto;
   margin: 2em 0;
   padding: 60px 0 0 0;
 }
 .cc-section h2 {
-  background: url("../../../themes/champions-theme/img/red-arrow.svg") 0 0 no-repeat;
+  background: url("../../../themes/campus-champions-theme/img/red-arrow.svg") 0 0 no-repeat;
   background-size: 20px 20px;
   padding: 30px 0;
   margin: 0;
@@ -1388,6 +1400,7 @@ a[class^="map-"]:hover { fill: var(--default-hover); }
 table.sticky-header th {
   padding: 0.75rem;
 }
+.cc-heading h3,
 .cc-list h2 {
   border-top: 4px solid #000;
   text-transform: uppercase;
@@ -1406,7 +1419,7 @@ table.sticky-header th {
 .cc-list li a {
   color:#000;
   font-weight: bold;
-  background: url("../../../themes/champions-theme/img/circle-arrow.svg") 0 0.2em no-repeat;
+  background: url("../../../themes/campus-champions-theme/img/circle-arrow.svg") 0 0.2em no-repeat;
   background-size: 1em auto;
   padding-left: 1.5em;
   display: block;

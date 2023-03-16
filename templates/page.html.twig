@@ -46,9 +46,9 @@
  */
 #}
 <div class="wrapper">
-	<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-	{% if page.primary_menu %}
-  {% block navbar %}
+  <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+  {% if page.primary_menu %}
+    {% block navbar %}
     <nav class="navbar navbar-expand secondary-nav navbar-light bg-light" id="secondaryNav">
       <div class="container">
         <!-- <div class="row" id="secondaryNavbarResponsive"> -->
@@ -76,6 +76,16 @@
 
     <header id="head">
       <div class="container">
+        <div id="block-brand">
+          <div class="row">
+            <h1 class="brand">
+              <a href="/">{{ site_name }}</a>
+            </h1>
+            <div class="flex-grow-1 text-right">
+              <p class="tagline">Uniting Research Computing Facilitators</p>
+            </div>
+          </div>
+        </div>
         {{ page.header }}
       </div>
     </header>
@@ -83,7 +93,8 @@
     <nav class="navbar fixed-to navbar-expand-lg navbar-light p-0" id="mainNav" aria-label="Main Navigation">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="{{ file_url('themes/champions-theme/img/logos/campus-champions-full-logo-white.svg') }}" class="logo" alt="{{ site_name }}">
+          <img src="{{ file_url('themes/campus-champions-theme/img/logos/campus-champions-full-logo-white.svg') }}" class="logo" alt="{{ site_name }}" />
+          <span class="sr-only">{{ site_name }}</span>
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="fa fa-bars" aria-hidden="true"></span>
@@ -102,15 +113,16 @@
   <main class="container{% if is_front %} main-container mt-0{% else %} mt-4{% endif %}">
     {% if is_front %}
       {% if page.campus_champions_front_header %}
-        {{ page.campus_champions_front_header }}
+        <div class="hero">
+          {{ page.campus_champions_front_header }}
+        </div>
       {% endif %}
       {% if page.campus_champions_front_quick_links %}
-        <div class="quick-links row mx-auto py-3 text-center">
-          <!-- <div class="navbar navbar-expand w-100"> -->
-          <div class="w-100">
+        <!-- <div class="quick-links row mx-auto py-3 text-center">
+          <div class="w-100"> -->
             {{ page.campus_champions_front_quick_links }}
-          </div>
-        </div>
+          <!-- </div>
+        </div> -->
       {% endif %}
       {% if page.campus_champions_front_sections %}
           {{ page.campus_champions_front_sections }}
@@ -192,22 +204,22 @@
 <footer class="footer">
   {% if page.first_footer %}
   <div class="container footer-main">
-		{{ page.first_footer }}
+    {{ page.first_footer }}
   </div>
   {% endif %}
   <div class="container footer-sub">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-xs-12">
-        <img src="{{ file_url('themes/champions-theme/img/logos/campus-champions-full-logo-white.svg') }}" width="250" alt="{{ site_name }}" />
+        <img src="{{ file_url('themes/campus-champions-theme/img/logos/campus-champions-full-logo-white.svg') }}" width="250" alt="{{ site_name }}" />
       </div>
       <div class="col-lg-6 col-md-6 col-xs-12 copyright">
-        <p>Funded in part by the <a href="https://nsf.gov" target="_blank" style="color: #fff;">National Science Foundation</a></p>
+        <p>Funded in part by the <a href="https://nsf.gov" target="_blank" rel="noopener" style="color: #fff;">National Science Foundation</a></p>
         <p>Copyright &copy; {{ 'now'|date('Y') }}, {{ site_name }} &bull; All Rights Reserved &bull; <a href="/regions">Connect.CI</a></p>
       </div>
     </div>
   </div>
 </footer>
-<!-- <script>
+<script>
   window.onUsersnapCXLoad = function(api) {
     api.init();
   }
@@ -215,4 +227,4 @@
   script.defer = 1;
   script.src = 'https://widget.usersnap.com/global/load/7c797226-874a-4785-aac2-c91bdc27b084?onload=onUsersnapCXLoad';
   document.getElementsByTagName('head')[0].appendChild(script);
-</script> -->
+</script>

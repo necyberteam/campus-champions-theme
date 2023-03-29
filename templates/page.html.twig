@@ -53,7 +53,7 @@
       <div class="container">
         <!-- <div class="row" id="secondaryNavbarResponsive"> -->
           <div class="flex-grow-1">
-            {{ page.intro_message }}
+            {{ page.promotional_message }}
           </div>
           <!-- <div class="col-md-6">-->
             {{ drupal_block('search_form_block') }}
@@ -62,10 +62,13 @@
             {% else %}
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a href="/user/login?current={{ path("<current>") }}" class="nav-link" data-drupal-link-system-path="user/login">Log in</a>
+                    <a href="https://access-ci.org" class="nav-link">ACCESS</a>
                   </li>
                   <li class="nav-item">
-                    <a href="/form/join-campus-champions" class="nav-link">Join CC</a>
+                    <a href="/news" class="nav-link" data-drupal-link-system-path="news">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/user/login?current={{ path("<current>") }}" class="nav-link" data-drupal-link-system-path="user/login">Login</a>
                   </li>
               </ul>
             {% endif %}
@@ -110,7 +113,7 @@
     {% endblock %}
   {% endif %}
 
-  <main class="container{% if is_front %} main-container mt-0{% else %} mt-4{% endif %}">
+  <main class="container{% if is_front %} main-container front{% endif %}">
     {% if is_front %}
       {% if page.campus_champions_front_header %}
         <div class="hero">
@@ -142,7 +145,7 @@
           </div>
       {% endif %}
     {% else %}
-      <div class="row">
+      <div class="row{% if page.title_area %} mt-0 {% else %} mt-4 {% endif %}">
       {% if page.primary_sidebar or page.secondary_sidebar %}
         <div class="col-lg-8 col-12 mx-auto">
           {{ page.page_top }}
@@ -209,12 +212,16 @@
   {% endif %}
   <div class="container footer-sub">
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-xs-12">
+      <div class="col-lg-4 col-md-4 col-xs-12">
         <img src="{{ file_url('themes/campus-champions-theme/img/logos/campus-champions-full-logo-white.svg') }}" width="250" alt="{{ site_name }}" />
       </div>
-      <div class="col-lg-6 col-md-6 col-xs-12 copyright">
-        <p>Funded in part by the <a href="https://nsf.gov" target="_blank" rel="noopener" style="color: #fff;">National Science Foundation</a></p>
-        <p>Copyright &copy; {{ 'now'|date('Y') }}, {{ site_name }} &bull; All Rights Reserved &bull; <a href="/regions">Connect.CI</a></p>
+      <div class="col-lg-8 col-md-8 col-xs-12 text-right">
+        <a href="/regions"><img src="{{ file_url('themes/campus-champions-theme/img/logos/connect-ci.svg') }}" height="50" alt="Connect.CI" />
+        <a href="https://ask.cyberinfrastructure.org/"><img src="{{ file_url('themes/campus-champions-theme/img/logos/ask-ci.svg') }}" height="50" alt="Ask.CyberInfrastructure" />
+        <a href="https://youtube.com"><img src="{{ file_url('themes/campus-champions-theme/img/logos/youtube.svg') }}" height="50" alt="YouTube" /></a>
+      </div>
+      <div class="col-lg-12 col-md-12 col-xs-12 copyright">
+        <p>Funded in part by the <a href="https://nsf.gov" target="_blank" rel="noopener">National Science Foundation</a>. Copyright &copy; {{ 'now'|date('Y') }}, {{ site_name }} &bull; All Rights Reserved &bull; <a href="/regions">Connect.CI</a></p>
       </div>
     </div>
   </div>

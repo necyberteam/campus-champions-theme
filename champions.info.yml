@@ -9,10 +9,11 @@ libraries:
   - champions/global-styling-and-scripts
   - champions/js-header
 regions:
+  promotional_message: 'Promotional Message'
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
   banner_image: 'Banner Image'
-  header: Header
+  header: 'Header'
   page_top: 'Page top'
   title_area: 'Title area'
   view_type_buttons: 'View Type Buttons'
@@ -45,4 +46,3 @@ regions:
   first_footer: 'First footer'
   second_footer: 'Second footer'
   third_footer: 'Third footer'
-  intro_message: 'Introduction Message'

@@ -32,168 +32,19 @@
   --link-hover: #3626A8;
   --navbar-background: linear-gradient(90deg, rgba(147, 19, 34, 1) 0%, rgba(197, 28, 47, 1) 100%);
   --navbar-link: #fff;
-  --navbar-link-hover: var(--text);
+  --navbar-link-hover: #eee;
   --navbar-toggler: var(--navbar-link);
   --navbar-dropdown: var(--text);
   --navbar-dropdown-hover: var(--link-hover);
+
+  --callout-background: var(--primary);
+  --callout-color: var(--light-text);
 
   --font-header: 'Poppins', Lato, "Lucida Grande", Tahoma, Sans-Serif;
   --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   --font-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
-/*
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/OpenSans-Light-webfont.eot');
-  src: url('../fonts/opensans/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans/OpenSans-Light-webfont.woff') format('woff'),
-    url('../fonts/opensans/OpenSans-Light-webfont.ttf') format('truetype'),
-    url('../fonts/opensans/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/OpenSans-LightItalic-webfont.eot');
-  src: url('../fonts/opensans/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans/OpenSans-LightItalic-webfont.woff') format('woff'),
-    url('../fonts/opensans/OpenSans-LightItalic-webfont.ttf') format('truetype'),
-    url('../fonts/opensans/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot');
-  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans/OpenSans-Regular-webfont.woff') format('woff'),
-    url('../fonts/opensans/OpenSans-Regular-webfont.ttf') format('truetype'),
-    url('../fonts/opensans/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/OpenSans-Italic-webfont.eot');
-  src: url('../fonts/opensans/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans/OpenSans-Italic-webfont.woff') format('woff'),
-    url('../fonts/opensans/OpenSans-Italic-webfont.ttf') format('truetype'),
-    url('../fonts/opensans/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/OpenSans-Semibold-webfont.eot');
-  src: url('../fonts/opensans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans/OpenSans-Semibold-webfont.woff') format('woff'),
-    url('../fonts/opensans/OpenSans-Semibold-webfont.ttf') format('truetype'),
-    url('../fonts/opensans/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/OpenSans-SemiboldItalic-webfont.eot');
-  src: url('../fonts/opensans/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
-    url('../fonts/opensans/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
-    url('../fonts/opensans/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/OpenSans-Bold-webfont.eot');
-  src: url('../fonts/opensans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans/OpenSans-Bold-webfont.woff') format('woff'),
-    url('../fonts/opensans/OpenSans-Bold-webfont.ttf') format('truetype'),
-    url('../fonts/opensans/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/OpenSans-BoldItalic-webfont.eot');
-  src: url('../fonts/opensans/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans/OpenSans-BoldItalic-webfont.woff') format('woff'),
-    url('../fonts/opensans/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
-    url('../fonts/opensans/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
-  font-weight: 700;
-  font-style: italic;
-}
 
-@font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/poppins/Poppins-ExtraLight.woff') format('woff'),
-        url('../fonts/poppins/Poppins-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/poppins/Poppins-ExtraLightItalic.woff') format('woff'),
-        url('../fonts/poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/poppins/Poppins-Light.woff') format('woff'),
-    url('../fonts/poppins/Poppins-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/poppins/Poppins-LightItalic.woff') format('woff'),
-    url('../fonts/poppins/Poppins-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/poppins/Poppins-Regular.woff') format('woff'),
-    url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/poppins/Poppins-Italic.woff') format('woff'),
-    url('../fonts/poppins/Poppins-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/poppins/Poppins-Semibold.woff') format('woff'),
-    url('../fonts/poppins/Poppins-Semibold.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/poppins/Poppins-SemiboldItalic.woff') format('woff'),
-    url('../fonts/poppins/Poppins-SemiboldItalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/poppins/Poppins-Bold.woff') format('woff'),
-    url('../fonts/poppins/Poppins-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/poppins/Poppins-BoldItalic.woff') format('woff'),
-    url('../fonts/poppins/Poppins-BoldItalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-}
-*/
 body:not(.logged_in) .authenticated-only { display: none !important; }
 body.logged_in .anon-only { display: none !important; }
 
@@ -222,6 +73,9 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2 { font-size: 1.5rem; }
 h3, h4 { font-size: 1.2rem; }
 h5, h6 { font-size: 1rem; }
+h2 {
+  font-weight: 400;
+}
 a {
   color: var(--link);
   transition: all 0.25s;
@@ -279,11 +133,10 @@ img::-moz-selection {
 .btn {
   font-size: 14px;
   font-weight: 800;
-  padding: 15px 25px;
   border-radius: 0;
   font-family: var(--font-body);
   margin-bottom: 10px;
-  padding: 0.5em 1em;
+  padding: 0.5em 2em;
   border-radius: 50rem;
 }
 @media screen and (max-width: 575.98px) {
@@ -302,7 +155,7 @@ img::-moz-selection {
 }
 .btn-lg {
   font-size: 16px;
-  padding: 25px 35px;
+  /*padding: 25px 35px;*/
 }
 .btn-primary {
   color: var(--light-text);
@@ -391,13 +244,10 @@ img::-moz-selection {
 /* navigation */
 .navbar {
   background-color: var(--navbar-background) !important;
-  font-family: 'museo-sans', sans-serif;
+  /*font-family: 'museo-sans', sans-serif;*/
 }
-/*.navbar .container {
-  max-width: 100% !important;
-}*/
 .navbar-brand > * {
-  font-family: 'museo-sans', sans-serif !important;
+  /*font-family: 'museo-sans', sans-serif !important;*/
   font-style: normal;
   font-weight: 400;
 }
@@ -559,22 +409,19 @@ li.dropdown-item a.nav-link:active {
     max-width: 100% !important;
   }
   .navbar-brand .logo {
-
-        float: left;
-        max-width: 150px;
-        min-width: 150px;
-        width: 100% !important;
-        padding: 5px;
-        margin: auto 0;
-        display: inline-block;
-        vertical-align: middle;
-
+    float: left;
+    max-width: 150px;
+    min-width: 150px;
+    width: 100% !important;
+    padding: 5px;
+    margin: auto 0;
+    display: inline-block;
+    vertical-align: middle;
     width: 100% !important;
     margin-right: -4rem;
     padding-right: 0;
   }
   @media screen and (max-width: 575.98px) {
-    /*.navbar-brand { margin-right: -7rem; }*/
     .navbar-brand .logo {
       width: 100px !important;
       max-width: 240px !important;
@@ -595,7 +442,6 @@ li.dropdown-item a.nav-link:active {
     margin-bottom: 0;
   }
   .dropdown .dropdown-menu {
-    /*display: block !important; */
     opacity: 1;
     max-height: initial;
     overflow: initial;
@@ -625,23 +471,15 @@ li.dropdown-item a.nav-link:active {
     -webkit-box-shadow: none;
     box-shadow: none
   }
-  /*.navbar-collapse { margin: 0 -1rem; }*/
   #secondaryNav.navbar li.nav-item a.nav-link {
     padding: 0px 15px !important;
   }
-  /*#secondaryNav .navbar,
-  #secondaryNav .navbar-nav {
-    background-color: var(--secondary-navbar-background) !important;
-  }*/
   #secondaryNav a.dropdown-item {
     color: var(--secondary-navbar-link);
     padding: 0px 25px !important;
   }
 }
-/*#secondaryNavbarResponsive {
-  display: flex;
-  align-items: center;
-}*/
+
 .search-block-form form {
   display: flex;
   justify-content: flex-end;
@@ -687,9 +525,7 @@ li.dropdown-item a.nav-link:active {
 .search-block-form .form-submit {
   margin: 0;
 }
-/*#mainNav .search-block-form form {
-  display: flex;
-}*/
+
 @media screen and (max-width: 575.98px) {
   #search-block-form .form-group {
     width: 100%;
@@ -706,9 +542,7 @@ li.dropdown-item a.nav-link:active {
     display: block;
   }
 }
-/*#search-block-form .form-search {
-  font-size: 0.8rem; 
-}*/
+
 #search {
   width: initial;
   -webkit-transition: all .5s ease;
@@ -724,17 +558,7 @@ li.dropdown-item a.nav-link:active {
 #mainNav>.container {
   background: var(--header-background);
 }
-/* header - banner images, carousel 
-header.masthead {
-  background: no-repeat center center;
-  background-color: var(--charcoal);
-  background-attachment: scroll;
-  position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
+
 header {
   padding: 2em 0;
 }
@@ -767,18 +591,14 @@ header .tagline {
   header .tagline {
     display: none;
   }
-  /*header .brand {
-    margin: 0 auto;
-  }*/
 }
 @media (max-width: 992px) {
-  /*header .tagline {
-    font-size: 1.3em;
-  }*/
   header {
     display: none;
   }
 }
+
+/* [!] hero */
 .hero {
   text-align: center;
   color: var(--masthead-text);
@@ -791,6 +611,16 @@ header .tagline {
   background: url("../../../themes/campus-champions-theme/img/usmap.svg") center center no-repeat;
   background-size: 90% auto;
   padding: 1em 0 2em 0;
+}
+.hero-about .container {
+  background: none;
+  background-size: 90% auto;
+  padding: 1em 0 2em 0;
+  text-align: left;
+  color: #fff;
+}
+.hero-about p {
+  font-weight: bold;
 }
 .hero .row {
   padding: 0;
@@ -862,14 +692,15 @@ header .tagline {
   padding: 10px 24px;
   border-radius: 40px;
 }
+/* [!] quick links */
 .quick-links {
   position: relative;
   top: -2em;
-  /*margin-top: -2em;*/
   width: 85%;
   background: var(--quicklinks-background);
   border-radius: 0.5em;
   z-index: 555;
+  color: var(--light-text);
 }
 .quick-links ul {
   list-style: none;
@@ -882,6 +713,9 @@ header .tagline {
   font-weight: 400;
   margin: 0 0 1em 0;
 }
+.quick-links h3 {
+  font-weight: 400;
+}
 .quick-links .navbar {
   background-color: transparent !important;
 }
@@ -893,6 +727,24 @@ header .tagline {
   .quick-links ul {
     flex-wrap: wrap;
   }
+}
+
+/* Join callout */
+#cc-join {
+  background: var(--callout-background);
+  color: var(--callout-color);
+  padding: 30px;
+}
+#cc-join h2 {
+  background-image: url("../../../themes/campus-champions-theme/img/white-arrow.svg");
+}
+#cc-join a {
+  color: var(--callout-color);
+  font-weight: 700;
+}
+#cc-join .btn-outline-primary {
+  color: var(--callout-color) !important;
+  border-color: var(--callout-color) !important;
 }
 
 /* form overrides */
@@ -915,12 +767,12 @@ header .tagline {
   border-radius: 0;
   background: none;
   box-shadow: none !important;
-  font-family: 'museo-sans', sans-serif;
+  font-family: var(--font-body);
 }
 .floating-label-form-group input::-webkit-input-placeholder,
 .floating-label-form-group textarea::-webkit-input-placeholder {
   color: #868e96;
-  font-family: 'museo-sans', sans-serif;
+  font-family: var(--font-body);
 }
 .floating-label-form-group label {
   font-size: 0.85em;
@@ -1025,8 +877,6 @@ footer .list-inline {
   padding: 30px 0;
   text-align: left;
   font-size: 0.9rem;
-  /*font-size: 14px;
-  letter-spacing: 0.04em;*/
   color: var(--footer-text);
   background: var(--footer-background);
 }
@@ -1049,22 +899,20 @@ footer .list-inline {
 .footer h3 {
   font-weight: 600;
   font-size: 0.9rem;
-  font-family: 'museo-sans', sans-serif;
+  font-family: var(--font-body);
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
-/*.footer-main { background: var(--footer-background); }*/
 .footer-sub {
   padding-top: 2em;
 }
 .footer-sub p { font-size: 13px !important; }
 .footer-sub a { transition: all 0.25s; }
 .footer-sub a:hover { color: var(--footer-link-hover) !important; }
-/*.footer-main > div.row,
-.footer-sub > div.row {
-  max-width: 1200px;
-  margin: 0 auto;
-}*/
+.footer-sub a img {
+  margin-left: 4rem;
+}
+
 ul.footer-links {
   margin: 0;
   padding: 0;
@@ -1270,7 +1118,7 @@ form[id^="views-exposed-form-resources"] label.option {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: 'museo-sans',sans-serif;
+  font-family: var(--font-body); /*'museo-sans',sans-serif;*/
   margin-bottom: 10px;
   background-color: var(--primary);
   border-color: var(--primary);
@@ -1371,10 +1219,11 @@ a[class^="map-"]:hover { fill: var(--default-hover); }
   height: 100%;
 }
 .cc-champions img {
-  width: 150px;
-  position: absolute;
+  /*width: 150px;
+  position: absolute;*/
+  width: 100%;
 }
-.cc-champions .cc-champion1 {
+/*.cc-champions .cc-champion1 {
   top: 10%;
   left: 10%;
 }
@@ -1393,12 +1242,9 @@ a[class^="map-"]:hover { fill: var(--default-hover); }
 .cc-champions .cc-champion5 {
   bottom: 0;
   right: 10%;
-}
+}*/
 .cc-section .callout {
   font-weight: bold;
-}
-table.sticky-header th {
-  padding: 0.75rem;
 }
 .cc-heading h3,
 .cc-list h2 {
@@ -1427,6 +1273,11 @@ table.sticky-header th {
 .cc-list time {
   color: var(--primary);
 }
+
+table.sticky-header th {
+  padding: 0.75rem;
+}
+
 /* pagination */
 .pager {
   width: 100%;
@@ -1458,6 +1309,7 @@ table.sticky-header th {
     display: none;
   }
 }
+
 /* card view styles */
 .card-image > img {
   object-fit: contain; 
@@ -1482,7 +1334,7 @@ table.sticky-header th {
   border-radius: 12px;
   font-size: 0.8rem;
 }
-/* AMP styles */
+/* AMP styles 
 #amp-logo-text {
   font-family : Montserrat;
   font-size : 48px;
@@ -1548,7 +1400,7 @@ table.sticky-header th {
 }
 .footer .amp h2 {
     text-transform: none;
-}
+}*/
 .ellipsis a {
   display: block;
   max-width: 350px;

@@ -613,8 +613,8 @@ header .tagline {
   padding: 1em 0 2em 0;
 }
 .hero-about .container {
-  background: none;
-  background-size: 90% auto;
+  background: url("../../../themes/campus-champions-theme/img/CC-hero-spring.jpg") center center no-repeat;
+  background-size: cover;
   padding: 1em 0 2em 0;
   text-align: left;
   color: #fff;

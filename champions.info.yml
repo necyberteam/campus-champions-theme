@@ -1,5 +1,5 @@
 name: Campus Champions
-description: Custom Drupal 8 theme for Campus Champions - Extends Bootstrap 4
+description: Custom Drupal 8 theme for Campus Champions
 type: theme
 base theme: false
 core: 8.x

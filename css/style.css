@@ -867,6 +867,9 @@ main {
 main.main-container {
   background: transparent;
 }
+main h1 {
+  margin: 1em 0;
+}
 /* footer */
 
 footer .list-inline {

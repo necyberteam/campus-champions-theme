@@ -1,1 +1,3 @@
-drupal - prefix branch name with md- (11 char total)
+# campus-champions-theme
+
+Custom Drupal theme for [Campus Champions](https://campuschampions.cyberinfrastructure.org).

@@ -573,7 +573,7 @@ header .brand a {
   display: block;
   overflow: hidden;
   border: none;
-  background: url("../../../themes/campus-champions-theme/img/logos/campus-champions-full-logo.svg") 0 0 no-repeat;
+  background: url("/themes/contrib/campus-champions-theme/img/logos/campus-champions-full-logo.svg") 0 0 no-repeat;
   background-size: 100% auto;
   width: 250px;
   height: 70px;
@@ -608,12 +608,12 @@ header .tagline {
   margin: 0 -15px;
 }
 .hero .container {
-  background: url("../../../themes/campus-champions-theme/img/usmap.svg") center center no-repeat;
+  background: url("/themes/contrib/campus-champions-theme/img/usmap.svg") center center no-repeat;
   background-size: 90% auto;
   padding: 1em 0 2em 0;
 }
 .hero-about .container {
-  background: url("../../../themes/campus-champions-theme/img/CC-hero-spring.jpg") center center no-repeat;
+  background: url("/themes/contrib/campus-champions-theme/img/CC-hero-spring.jpg") center center no-repeat;
   background-size: cover;
   padding: 1em 0 2em 0;
   text-align: left;
@@ -720,7 +720,7 @@ header .tagline {
   background-color: transparent !important;
 }
 .wrapper {
-  background: url("../../../themes/campus-champions-theme/img/logos/campus-champions-logo.svg") 800px 1000px no-repeat;
+  background: url("/themes/contrib/campus-champions-theme/img/logos/campus-champions-logo.svg") 800px 1000px no-repeat;
   background-size: 900px auto;
 }
 @media screen and (max-width: 575.98px) {
@@ -736,7 +736,7 @@ header .tagline {
   padding: 30px;
 }
 #cc-join h2 {
-  background-image: url("../../../themes/campus-champions-theme/img/white-arrow.svg");
+  background-image: url("/themes/contrib/campus-champions-theme/img/white-arrow.svg");
 }
 #cc-join a {
   color: var(--callout-color);
@@ -1199,13 +1199,13 @@ a[class^="map-"]:hover { fill: var(--default-hover); }
   color: #4C7C6C;
 } */
 .cc-section {
-  background: rgba(255, 255, 255, 0.90) url("../../../themes/campus-champions-theme/img/dotted-seperator.svg") 0 0 no-repeat;
+  background: rgba(255, 255, 255, 0.90) url("/themes/contrib/campus-champions-theme/img/dotted-seperator.svg") 0 0 no-repeat;
   background-size: 30% auto;
   margin: 2em 0;
   padding: 60px 0 0 0;
 }
 .cc-section h2 {
-  background: url("../../../themes/campus-champions-theme/img/red-arrow.svg") 0 0 no-repeat;
+  background: url("/themes/contrib/campus-champions-theme/img/red-arrow.svg") 0 0 no-repeat;
   background-size: 20px 20px;
   padding: 30px 0;
   margin: 0;
@@ -1268,7 +1268,7 @@ a[class^="map-"]:hover { fill: var(--default-hover); }
 .cc-list li a {
   color:#000;
   font-weight: bold;
-  background: url("../../../themes/campus-champions-theme/img/circle-arrow.svg") 0 0.2em no-repeat;
+  background: url("/themes/contrib/campus-champions-theme/img/circle-arrow.svg") 0 0.2em no-repeat;
   background-size: 1em auto;
   padding-left: 1.5em;
   display: block;

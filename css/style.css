@@ -169,13 +169,15 @@ img::-moz-selection {
 }
 .btn-success {
   color: var(--light-text);
-  background-color: var(--success);
-  border-color: var(--success);
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
-.btn-success:hover, .btn-success:focus, .btn-success:active {
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
   color: var(--light-text);
-  background-color: var(--success-hover) !important;
-  border-color: var(--success-hover) !important;
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
 }
 .btn-outline-primary {
   color: var(--primary) !important;

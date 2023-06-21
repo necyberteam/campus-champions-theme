@@ -877,6 +877,7 @@ footer .list-inline {
   padding: 0;
 }
 .footer {
+  margin: 60px 0 0 0;
   padding: 30px 0;
   text-align: left;
   font-size: 0.9rem;
@@ -1254,6 +1255,8 @@ a[class^="map-"]:hover { fill: var(--default-hover); }
   border-top: 4px solid #000;
   text-transform: uppercase;
   padding: 0.5em 0;
+  font-size: 1.2rem;
+  font-weight: 800;
 }
 .cc-list ul {
   list-style: none;

@@ -47,7 +47,6 @@
 #}
 <div class="wrapper">
   <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-  {% if page.header %}
     {% block navbar %}
     <nav class="navbar navbar-expand secondary-nav navbar-light bg-light" id="secondaryNav">
       <div class="container">
@@ -111,7 +110,6 @@
       </div>
     </nav>
     {% endblock %}
-  {% endif %}
 
   <main class="container{% if is_front %} main-container front{% endif %}">
     {% if is_front %}

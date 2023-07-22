@@ -1457,3 +1457,16 @@ table.sticky-header th {
 #block-views-block-affinity-group-group-2 .bg-orange {
   background-color: var(--navbar-link);
 }
+.affinity-group-buttons {
+  align-items: center;
+}
+
+.affinity-group-flag {
+  padding: 0 !important;
+}
+
+.affinity-group-flag a {
+  padding: 7px 28px !important;
+  margin: 0;
+  font-size: 14px;
+}

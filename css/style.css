@@ -407,7 +407,7 @@ li.dropdown-item a.nav-link:active {
     }*/
 }
 /* hide access and news items for now */
-body:not(.loggin_id) .secondary-nav .nav-bar .nav-item:nth-of-type(1), body:not(.loggin_id) .secondary-nav .nav-bar .nav-item:nth-of-type(2) {
+body:not(.logged_in) .secondary-nav .nav-bar .nav-item:nth-of-type(1), body:not(.logged_in) .secondary-nav .nav-bar .nav-item:nth-of-type(2) {
   display: none;
 }
 @media screen and (max-width: 991.98px) {

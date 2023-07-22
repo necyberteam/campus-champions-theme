@@ -960,7 +960,12 @@ ul.footer-links li:hover * {
     background-position: left bottom;
   }
 }
-
+.footer .my-profile {
+  display: none;
+}
+.logged_in .footer .my-profile {
+  display: block;
+}
 /* front flex */
 .flex-container {
   display: -webkit-box;

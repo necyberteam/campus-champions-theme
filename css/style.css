@@ -964,7 +964,19 @@ ul.footer-links li:hover * {
     background-position: left bottom;
   }
 }
+.affinity-group-buttons {
+  align-items: center;
+}
 
+.affinity-group-flag {
+  padding: 0 !important;
+}
+
+.affinity-group-flag a {
+  padding: 7px 28px !important;
+  margin: 0;
+  font-size: 14px;
+}
 /* front flex */
 .flex-container {
   display: -webkit-box;

@@ -970,6 +970,7 @@ ul.footer-links li:hover * {
 
 .affinity-group-flag {
   padding: 0 !important;
+  border-color: var(--primary);
 }
 
 .affinity-group-flag a {

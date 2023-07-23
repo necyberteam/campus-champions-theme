@@ -210,14 +210,13 @@
   {% endif %}
   <div class="container footer-sub">
     <div class="row">
-      <div class="col-lg-4 col-md-4 col-xs-12">
+      <div class="col-lg-4 col-md-4 col-xs-12 d-flex justify-content-center justify-content-lg-start">
         <img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/campus-champions-full-logo-white.svg') }}" width="250" alt="{{ site_name }}" />
       </div>
-      <div class="col-lg-8 col-md-8 col-xs-12 text-right">
-        <a href="/regions"><img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/connect-ci.svg') }}" height="50" alt="Connect.CI" />
-        <a href="https://ask.cyberinfrastructure.org/"><img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/ask-ci.svg') }}" height="50" alt="Ask.CyberInfrastructure" />
-        <a href="https://www.youtube.com/@researchcomputingcampuscha9396"><img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/youtube.svg') }}" height="50" alt="YouTube"/></a>
-
+      <div class="col-lg-8 col-md-8 col-xs-12 d-flex justify-content-center justify-content-lg-end flex-wrap align-items-center">
+        <a class="my-4" href="/regions"><img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/connect-ci.svg') }}" height="35" alt="Connect.CI" />
+        <a class="my-4 mx-5" href="https://ask.cyberinfrastructure.org/"><img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/ask-ci.svg') }}" height="50" alt="Ask.CyberInfrastructure"/>
+        <a class="my-4 mx-5 mx-lg-0" href=" https://www.youtube.com/@researchcomputingcampuscha9396"><img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/youtube.svg') }}" height="50" alt="YouTube"/></a>
       </div>
       <div class="col-lg-12 col-md-12 col-xs-12 copyright">
         <p>Funded in part by the <a href="https://nsf.gov" target="_blank" rel="noopener">National Science Foundation</a>. Copyright &copy; {{ 'now'|date('Y') }}, {{ site_name }} &bull; All Rights Reserved &bull; <a href="/regions">Connect.CI</a></p>

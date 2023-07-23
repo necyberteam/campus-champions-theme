@@ -891,6 +891,11 @@ footer .list-inline {
   color: var(--footer-text);
   background: var(--footer-background);
 }
+.footer .footer-main .row .col {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
 .footer .copyright {
   padding-top: 2em;
   font-size: 90%;
@@ -920,9 +925,6 @@ footer .list-inline {
 .footer-sub p { font-size: 13px !important; }
 .footer-sub a { transition: all 0.25s; }
 .footer-sub a:hover { color: var(--footer-link-hover) !important; }
-.footer-sub a img {
-  margin-left: 4rem;
-}
 
 ul.footer-links {
   margin: 0;

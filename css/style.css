@@ -1422,3 +1422,10 @@ table.sticky-header th {
   margin: 0;
   font-size: 14px;
 }
+.add-interest-list ul, .add-skill-list ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.add-interest-list ul li, .add-skill-list ul li {
+  list-style: none;
+}

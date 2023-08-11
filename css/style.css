@@ -1429,3 +1429,21 @@ table.sticky-header th {
 .add-interest-list ul li, .add-skill-list ul li {
   list-style: none;
 }
+
+/* card accordion */
+.accordion-header {
+  padding: 7px 0px 0px 0px;
+}
+.accordion-item {
+  margin-bottom: 8px;
+}
+.accordion-btn {
+  color: var(--primary);
+  margin-bottom: 0px;
+}
+.accordion-btn:hover,
+.accordion-btn:active {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+

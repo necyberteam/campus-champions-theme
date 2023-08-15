@@ -54,13 +54,13 @@
           <div class="flex-grow-1">
             {{ page.promotional_message }}
           </div>
+          <!-- <div class="col-md-6">-->
+          {{ drupal_block('search_form_block') }}
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a href="https://access-ci.org" class="nav-link">ACCESS CI</a>
             </li>
           </ul>
-          <!-- <div class="col-md-6">-->
-            {{ drupal_block('search_form_block') }}
             {% if page.secondary_menu and logged_in %}
               {{ page.secondary_menu }}
             {% else %}

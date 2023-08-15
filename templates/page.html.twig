@@ -54,15 +54,17 @@
           <div class="flex-grow-1">
             {{ page.promotional_message }}
           </div>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="https://access-ci.org" class="nav-link">ACCESS CI</a>
+            </li>
+          </ul>
           <!-- <div class="col-md-6">-->
             {{ drupal_block('search_form_block') }}
             {% if page.secondary_menu and logged_in %}
               {{ page.secondary_menu }}
             {% else %}
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a href="https://access-ci.org" class="nav-link">ACCESS</a>
-                  </li>
                   <li class="nav-item">
                     <a href="/news" class="nav-link" data-drupal-link-system-path="news">News</a>
                   </li>
@@ -216,6 +218,7 @@
         </a>
       </div>
       <div class="col-lg-8 col-md-8 col-xs-12 d-flex justify-content-center justify-content-lg-end flex-wrap align-items-center">
+        <a class="my-4" href="https://access-ci.org"><img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/ACCESS-logo.png') }}" height="35" alt="ACCESS CI" />
         <a class="my-4" href="https://connect.cyberinfrastructure.org/"><img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/connect-ci.svg') }}" height="35" alt="Connect.CI" />
         <a class="my-4 mx-5" href="https://ask.cyberinfrastructure.org/"><img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/ask-ci.svg') }}" height="50" alt="Ask.CyberInfrastructure"/>
         <a class="my-4 mx-5 mx-lg-0" href=" https://www.youtube.com/@researchcomputingcampuscha9396"><img src="{{ file_url('themes/contrib/campus-champions-theme/img/logos/youtube.svg') }}" height="50" alt="YouTube"/></a>

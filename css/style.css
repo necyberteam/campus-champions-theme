@@ -1507,3 +1507,6 @@ table.sticky-header th {
 .ci-links th[id^="view-webform-submission-value-3-table-column"] {
   text-align: center;
 }
+.fs-1 {
+  font-size: 2.5rem !important
+}

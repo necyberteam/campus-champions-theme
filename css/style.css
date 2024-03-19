@@ -1590,6 +1590,10 @@ table.sticky-header th {
   margin: 0 0.25rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .search-ci-links {
   margin: 1rem 0;
 }
@@ -1615,7 +1619,7 @@ table.sticky-header th {
   grid-column: span 4;
 }
 
-.search-ci-links .text-orange {
+.search-ci-links .linkcount {
   margin-left: auto;
   border-radius: 9999px;
 }

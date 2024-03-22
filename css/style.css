@@ -1653,3 +1653,6 @@ button.copyclip {
   top: 1rem;
   border-width: 0;
 }
+#block-champions-cilinkintroblock .p-5 {
+  padding: 15px 15px 0 15px !important;
+}

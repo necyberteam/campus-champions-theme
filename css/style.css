@@ -1571,3 +1571,85 @@ table.sticky-header th {
 .square-tags.views-field .m-2 {
   margin: 0 0.25rem 0.25rem 0 !important;
 }
+
+.relative {
+  position: relative;
+}
+
+#block-champions-exposedformsearch-ci-linkspage-1 {
+  margin-top: 2rem;
+}
+
+.block-facet--checkbox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.block-facet--checkbox ul input {
+  margin: 0 0.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.search-ci-links {
+  margin: 1rem 0;
+}
+
+.search-ci-links summary {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: var(--navbar-link-hover);
+}
+
+.search-ci-links .grid .bg-light-teal {
+  background: var(--light);
+}
+
+.search-ci-links .grid-cols-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.search-ci-links .md--col-span-4 {
+  grid-column: span 4;
+}
+
+.search-ci-links .linkcount {
+  margin-left: auto;
+  border-radius: 9999px;
+}
+
+.search-ci-links details {
+  background: var(--light-text);
+}
+
+.search-ci-links details summary {
+  padding: 0 1rem;
+}
+
+.search-ci-links details ul {
+  list-style: none;
+  padding: 0;
+  margin: .5rem 0 0 0;
+}
+
+button.copyclip:has(+ details.search-ci-links summary) {
+  display:none;
+}
+
+button.copyclip:has(:hover, + details.search-ci-links summary:hover) {
+  display:block;
+}
+
+button.copyclip {
+  position: absolute;
+  z-index: 10;
+  right: 7rem;
+  top: 1rem;
+  border-width: 0;
+}

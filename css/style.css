@@ -1249,6 +1249,10 @@ a[class^="map-"]:hover { fill: var(--default-hover); }
   color: var(--primary);
 }
 
+.block-views-blocknode-add-tags-block-3.sticky-top {
+  z-index: 0;
+}
+
 table.sticky-header th {
   padding: 0.75rem;
 }
@@ -1655,4 +1659,8 @@ button.copyclip {
 }
 #block-champions-cilinkintroblock .p-5 {
   padding: 15px 15px 0 15px !important;
+}
+
+.top-80 {
+  top: 80px;
 }

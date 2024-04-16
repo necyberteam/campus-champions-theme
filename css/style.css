@@ -1661,6 +1661,10 @@ button.copyclip {
   padding: 15px 15px 0 15px !important;
 }
 
+ #block-champions-affinitygroupcategory {
+  margin-top: 1.5rem;
+}
+
 .top-80 {
   top: 80px;
 }

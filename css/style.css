@@ -1249,6 +1249,10 @@ a[class^="map-"]:hover { fill: var(--default-hover); }
   color: var(--primary);
 }
 
+.block-views-blocknode-add-tags-block-3.sticky-top {
+  z-index: 0;
+}
+
 table.sticky-header th {
   padding: 0.75rem;
 }
@@ -1690,4 +1694,12 @@ button.copyclip {
 .cssn-directory-item li {
   line-height: 1;
   display: flex;
+}
+
+ #block-champions-affinitygroupcategory {
+  margin-top: 1.5rem;
+}
+
+.top-80 {
+  top: 80px;
 }

@@ -44,6 +44,7 @@
   --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   --font-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
   --bs-orange: #F07537;
+  --selected-tag: var(--primary);
 }
 
 body:not(.logged_in) .authenticated-only { display: none !important; }

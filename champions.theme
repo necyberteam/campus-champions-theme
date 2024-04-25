@@ -81,7 +81,7 @@ function champions_form_alter(&$form, FormStateInterface $form_state, $form_id) 
     $form['field_region']['#description_display'] = 'before';
   }
   if ($form_id == 'user_login_form') {
-    $form['name']['#prefix'] = '<div class="col-lg-6 col-md-8 mx-auto text-center card my-4"><div class="card-body"><p>Please login with your Cyberteam account below or <a href="/user/register">Join the Team</a>.</p><div class="control-group form-group">';
+    $form['name']['#prefix'] = '<div class="col-lg-6 col-md-8 mx-auto text-center card my-4"><div class="card-body"><p>Login with your Campus Champion or Cyberteam account.</p><div class="control-group form-group">';
     $form['name']['#suffix'] = '</div>';
     $form['name']['#attributes']['placeholder'][] = $form['name']['#title'].'*';
     $form['name']['#attributes']['class'][] = 'form-control';

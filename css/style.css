@@ -1716,3 +1716,7 @@ button.copyclip {
   margin-left: 12px;
   font-size: 12px;
 }
+.z-10 {
+  position: relative;
+  z-index: 10;
+}

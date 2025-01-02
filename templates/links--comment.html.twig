@@ -40,17 +40,17 @@
         {%- if item.link -%}
 			{% if item.text == 'Delete' %}
 				{% set text %}
-					<span class="fa fa-trash-o" aria-hidden="true"></span> {{ item.text }}
+					<span class="bi-trash" aria-hidden="true"></span> {{ item.text }}
 				{% endset %}
 				<a href="{{ item.link['#url']|render }}" class="nav-link">{{ text }}</a>
 			{% elseif item.text == 'Edit' %}
 				{% set text %}
-					<span class="fa fa-pencil-square-o" aria-hidden="true"></span> {{ item.text }}
+					<span class="bi-pencil-square" aria-hidden="true"></span> {{ item.text }}
 				{% endset %}
 				<a href="{{ item.link['#url']|render }}" class="nav-link">{{ text }}</a>
 			{% elseif item.text == 'Reply' %}
 				{% set text %}
-					<span class="fa fa-reply" aria-hidden="true"></span> {{ item.text }}
+					<span class="bi-reply" aria-hidden="true"></span> {{ item.text }}
 				{% endset %}
 				<a href="{{ item.link['#url']|render }}" class="nav-link">{{ text }}</a>
 			{% else %}

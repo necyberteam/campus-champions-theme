@@ -805,7 +805,7 @@ p.card-text { margin-top: 0; }
 .sidebar-ul > li > a:hover {
   color: var(--primary);
 }
-.sidebar-ul .fa-bug {
+.sidebar-ul .bi-bug {
   font-size: 1.05em !important;
 }
 main {
@@ -891,7 +891,7 @@ ul.footer-links li:hover * {
   color: var(--footer-text);
 }
 .footer-socialmedia i:hover { color: var(--footer-link-hover); }
-.list-group > .list-group-item > .fa.fa-chevron-right { float: right; }
+.list-group > .list-group-item > .bi-chevron-right { float: right; }
 .footer-main {
   background-repeat: no-repeat;
   background-position: bottom;

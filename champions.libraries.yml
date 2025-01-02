@@ -3,7 +3,7 @@ global-styling-and-scripts:
   css:
    base:
     'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css': { type: external, minified: true }
-    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css': { type: external, minified: true }
+    'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css': { type: external, minified: true }
     'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap': { type: external }
     'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap': { type: external }
     css/style.css: {}

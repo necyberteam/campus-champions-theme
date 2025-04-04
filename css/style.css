@@ -1697,6 +1697,13 @@ button.copyclip {
   display: flex;
 }
 
+.messages {
+  background: #ffe484;
+  margin: .5em 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
 #block-champions-exposedformaffinity-group-searchpage-1,
  #block-champions-affinitygroupcategory {
   margin-top: 1.5rem;

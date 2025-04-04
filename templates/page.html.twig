@@ -122,6 +122,7 @@
     {% endif %}
     <main class="container{% if is_front %} main-container front{% endif %}">
       {% if is_front %}
+        {{ page.title_area }}
         {% if page.campus_champions_front_header %}
           <div class="hero">
             {{ page.campus_champions_front_header }}

@@ -81,7 +81,7 @@ function champions_form_alter(&$form, FormStateInterface $form_state, $form_id) 
     $form['field_region']['#description_display'] = 'before';
   }
   if ($form_id == 'user_login_form') {
-    $form['name']['#prefix'] = '<div class="col-lg-6 col-md-8 mx-auto text-center card my-4"><div class="card-body"><p>Login with your Campus Champion or Cyberteam account.</p><div class="control-group form-group">';
+    $form['name']['#prefix'] = '<div class="col-lg-6 col-md-8 mx-auto text-center card my-4"><div class="card-body"><div class="mb-2"><img src="/themes/contrib/campus-champions-theme/img/campus-champions-logo-sq.gif" alt="Campus Champions account"/><img src="/themes/nect-theme/img/ccmnet-logo-sq.gif" alt="CCMNet account"><img src="/themes/nect-theme/img/careerslogo.flat.png" alt="Careers Cyberteam"><img src="/themes/nect-theme/img/logo.png" alt="NE Cyberteam"><img src="/themes/custom/ood/ood-img/ood-community-portal.png" alt="Open OnDemand account"></div><div class="control-group form-group">';
     $form['name']['#suffix'] = '</div>';
     $form['name']['#attributes']['placeholder'][] = $form['name']['#title'].'*';
     $form['name']['#attributes']['class'][] = 'form-control';
@@ -92,8 +92,8 @@ function champions_form_alter(&$form, FormStateInterface $form_state, $form_id) 
     $form['pass']['#attributes']['class'][] = 'form-control';
     $form['pass']['#title_display'] = 'invisible';
     $form['actions']['#prefix'] = '<div class="success">';
-    $form['actions']['#suffix'] = '<a class="btn btn-secondary mx-1" href="/user/password">Forgot Password</a></div></div></div>';
-    $form['actions']['submit']['#attributes']['class'][] = 'btn btn-success mx-1';
+    $form['actions']['#suffix'] = '<a class="btn btn-secondary m-1" href="/user/password">Forgot Password</a></div></div></div>';
+    $form['actions']['submit']['#attributes']['class'][] = 'btn btn-success m-1';
     unset($form['name']['#description']);
     unset($form['pass']['#description']);
   }

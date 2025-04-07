@@ -1745,3 +1745,23 @@ button.copyclip {
   display: none !important;
 }
 
+#cilogon-auth-login-prefix img {
+  width: 50px;
+  margin: 20px 0;
+}
+
+#cilogon-auth-login-suffix {
+  margin-top: 15px;
+  padding: 0 30px;
+  font-size: 0.9rem;
+}
+
+#user-login-form .card-body img {
+  width: 125px;
+  margin: 10px;
+}
+
+#user-login-form input {
+  max-width: 200px;
+  margin: auto;
+}

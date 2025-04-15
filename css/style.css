@@ -73,6 +73,10 @@ body:not(.ccmnet) .ccmnet {
 body:not(.campus-champions) .campus-champions{
   display: none !important;
 }
+body:not(.open-ondemand) .open-ondemand {
+  display: none !important;
+}
+
 .wrapper {
   flex: 1 0 auto;
 }

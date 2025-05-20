@@ -1825,3 +1825,24 @@ body:not(.open-ondemand) .open-ondemand {
   height: auto;
   margin: 1.5rem 0 0.75rem 0;
 }
+
+.private {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+}
+
+.private.bg {
+  border-left: 50px solid transparent;
+  border-top: 50px solid var(--primary);
+}
+
+.private.icon {
+  top: 0.25rem;
+  right: 0.25rem;
+  width: 1rem;
+  z-index: 1000;
+  pointer-events: none;
+}

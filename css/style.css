@@ -1798,3 +1798,9 @@ body:not(.northeast-cyberteam) .northeast-cyberteam {
 body:not(.open-ondemand) .open-ondemand {
   display: none !important;
 }
+
+#block-champions-views-block-badges-block-1 img {
+  width: 120px;
+  height: auto;
+  margin: 1.5rem 0 0.75rem 0;
+}

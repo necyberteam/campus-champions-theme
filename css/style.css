@@ -1819,3 +1819,9 @@ body:not(.open-ondemand) .open-ondemand {
   z-index: 1000;
   pointer-events: none;
 }
+
+#block-champions-views-block-badges-block-1 img {
+  width: 120px;
+  height: auto;
+  margin: 1.5rem 0 0.75rem 0;
+}

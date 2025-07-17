@@ -1821,3 +1821,16 @@ body:not(.open-ondemand) .open-ondemand {
   height: auto;
   margin: 1.5rem 0 0.75rem 0;
 }
+
+/* Hide pagination in sidebar and search input in main content area on /current-champions page */
+#block-champions-exposedformcampus-champions-memberspage-1 {
+  margin-top: 2rem;
+}
+
+#block-champions-exposedformcampus-champions-memberspage-1 .form-item-items-per-page {
+  display: none !important;
+}
+
+#block-champions-exposedformcampus-champions-memberspage-1-2 .form-item-search-api-fulltext {
+  display: none !important;
+}

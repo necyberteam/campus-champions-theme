@@ -48,6 +48,10 @@
 }
 
 body:not(.logged_in) .authenticated-only { display: none !important; }
+
+#block-champions-exposedformcampus-champions-memberspage-1-2 #edit-search--2 {
+  display: none;
+}
 body.logged_in .anon-only { display: none !important; }
 
 /* standard elements */

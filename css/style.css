@@ -2080,3 +2080,15 @@ body:not(.open-ondemand) .open-ondemand {
     margin-bottom: 1rem !important;
   }
 }
+
+.page-node-type-access-news
+  .layout__region--second .page-title:nth-child(1) {
+    display: none;
+  }
+  .layout__region--second:not(:has(.page-title:nth-child(2) + div a)) .page-title:nth-child(2) {
+    display: none;
+  }
+  .layout__region--second .page-title h3 {
+    margin-bottom: 1em;
+  }
+}

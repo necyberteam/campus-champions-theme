@@ -2070,3 +2070,13 @@ body:not(.open-ondemand) .open-ondemand {
 .page-community-persona .btn-primary {
   background-color: lime !important;
 }
+
+.page-node-6110 {
+  .cc-override.pb-5 {
+    padding-bottom: 1rem !important;
+  }
+  .cc-override.my-5 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+}

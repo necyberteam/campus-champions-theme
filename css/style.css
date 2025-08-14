@@ -2092,11 +2092,15 @@ body:not(.open-ondemand) .open-ondemand {
       border: none !important;
     }
     .views-field {
-      height: 350px;
+      height: 300px;
       border: 3px solid var(--primary);
       background: #fff;
     }
     .text-small {
+      font-size: 0.8rem;
+      line-height: 1.2;
+    }
+    p.text-small {
       display: -webkit-box;
       text-overflow: ellipsis;
       overflow: hidden;

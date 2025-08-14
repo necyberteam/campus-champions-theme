@@ -2122,11 +2122,6 @@ body:not(.open-ondemand) .open-ondemand {
     justify-content: center;
     margin-top: 1rem;
   }
-  .btn {
-    color: var(--light-text);
-    background-color: var(--primary-hover) !important;
-    border-color: var(--primary-hover) !important;
-  }
 }
 
 /* TEST RULE - Community Persona Primary Button Override */

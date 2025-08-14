@@ -2066,6 +2066,56 @@ body:not(.open-ondemand) .open-ondemand {
   display: none !important;
 }
 
+.path-frontpage .wrapper {
+  overflow-x: hidden;
+}
+
+#block-champions-views-block-mentorship-facet-search-block-1 {
+  margin-left: -50% !important;
+  margin-right: -50% !important;
+  padding-left: 50% !important;
+  padding-right: 50% !important;
+  background: var(--footer-background);
+  margin-bottom: 2rem;
+
+  #mentor-slider .square-tags a:nth-of-type(n+5),
+  .cssn-directory-item li:nth-of-type(n+6) {
+    display: none;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .carousel-item {
+    .border {
+      border: none !important;
+    }
+    .views-field {
+      height: 350px;
+      border: 3px solid var(--primary);
+      background: #fff;
+    }
+    .text-small {
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .btn {
+    color: var(--light-text);
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+  }
+}
+
 /* TEST RULE - Community Persona Primary Button Override */
 .page-community-persona .btn-primary {
   background-color: lime !important;

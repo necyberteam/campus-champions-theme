@@ -2092,9 +2092,18 @@ body:not(.open-ondemand) .open-ondemand {
       border: none !important;
     }
     .views-field {
-      height: 300px;
+      height: 350px;
       border: 3px solid var(--primary);
       background: #fff;
+
+      .text-white:first-child {
+        background: var(--primary);
+      }
+      .text-white:last-child {
+        display: block;
+        margin-left: 1rem;
+        color: var(--primary) !important;
+      }
     }
     .text-small {
       font-size: 0.8rem;

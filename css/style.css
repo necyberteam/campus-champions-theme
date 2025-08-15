@@ -764,6 +764,32 @@ header .tagline {
 .floating-label-form-group-with-focus label { color: var(--primary); }
 form .form-group:first-child .floating-label-form-group { border-top: 1px solid #e6e7e8; }
 
+div .collapsiblockTitleCollapsed button {
+  position: relative;
+  background: none;
+  &:after {
+    content: url('/themes/contrib/campus-champions-theme/img/accordion-arrow.png');
+    position: absolute;
+    right: 1rem;
+    top: 5px;
+    transition: 300ms;
+  }
+
+}
+
+.collapsiblockTitle button[aria-expanded="true"] {
+  position: relative;
+  background: none;
+  &:after {
+    content: url('/themes/contrib/campus-champions-theme/img/accordion-arrow.png');
+    position: absolute;
+    right: 1rem;
+    top: 5px;
+    transition: 300ms;
+    transform: rotate(-180deg);
+  }
+}
+
 /* card overrides */
 .card-header .fa {
   transition: .3s transform ease-in-out;
@@ -2053,6 +2079,22 @@ body:not(.open-ondemand) .open-ondemand {
   margin: 1.5rem 0 0.75rem 0;
 }
 
+@media only screen and (max-width: 991.98px) {
+  .sidebar:has(.facets-checkbox) {
+    border: 3px solid var(--secondary);
+    padding: 1rem;
+    margin: 1rem !important;
+
+    .views-exposed-form {
+      margin: 0;
+    }
+
+    button h2 {
+      color: var(--primary);
+    }
+  }
+}
+
 /* Hide pagination in sidebar and search input in main content area on /current-champions page */
 #block-champions-exposedformcampus-champions-memberspage-1 {
   margin-top: 2rem;
@@ -2081,7 +2123,7 @@ body:not(.open-ondemand) .open-ondemand {
   }
 }
 
-.page-node-type-access-news
+.page-node-type-access-news {
   .layout__region--second .page-title:nth-child(1) {
     display: none;
   }

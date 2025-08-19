@@ -2107,7 +2107,8 @@ body:not(.open-ondemand) .open-ondemand {
   overflow-x: hidden;
 }
 
-#block-champions-views-block-mentorship-facet-search-block-1 {
+#block-champions-views-block-mentorship-facet-search-block-1,
+#block-champions-views-block-mentorship-facet-search-block-1-2 {
   margin-left: -50% !important;
   margin-right: -50% !important;
   padding-left: 50% !important;
@@ -2156,8 +2157,21 @@ body:not(.open-ondemand) .open-ondemand {
   }
   footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: 1rem;
+  }
+  footer > div:last-child {
+    white-space: nowrap;
+  }
+  footer .btn.bg-ccmnet-lightblue {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+  }
+  footer img[alt="CCMNET Logo"] {
+    max-width: 80px !important;
+    height: auto;
   }
 }
 

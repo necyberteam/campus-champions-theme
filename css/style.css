@@ -560,7 +560,7 @@ header .tagline {
   }
 }
 @media (max-width: 992px) {
-  header {
+  #secondaryNav + header {
     display: none;
   }
 }
@@ -2201,3 +2201,6 @@ body:not(.open-ondemand) .open-ondemand {
     margin-bottom: 1em;
   }
 }
+
+/* Domain-specific visibility rules */
+.campus-champions .hide-campus-champions { display: none !important; }

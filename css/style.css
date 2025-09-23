@@ -264,6 +264,10 @@ img::-moz-selection {
   filter: drop-shadow(1px 1px 4px rgba(101,101,101,0.5));
 }
 
+.layout__region--second {
+  word-break: break-word;
+}
+
 /* navigation */
 .navbar {
   background-color: var(--navbar-background) !important;
